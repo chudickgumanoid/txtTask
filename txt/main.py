@@ -26,6 +26,7 @@ with open('Библия.txt', 'r', encoding='utf-8') as file:
 print('Количество слов в файле:', words_count)
 
 
+# считает повторяющееся слово
 count = 0
 wordRep = ""
 maxCount = 0
@@ -114,6 +115,7 @@ f.write(meet + wordRep + '\n')
 with open('Библия.txt', 'r', encoding='utf-8') as file:
     f.write('\n' + file.read() + "\n")
 
+# вывод для второго файла
 f.write(title + filesName[1] + '\n')
 f.write(extension + ex + '\n')
 f.write(lineSum + str(line_count) + '\n')
@@ -121,18 +123,10 @@ f.write(wordSum + str(words_count) + '\n')
 with open('Божественная комедия.txt', 'r', encoding='utf-8') as file:
     f.write('\n' + file.read() + "\n")
 
+# вывод для третьего файла
 f.write('\n' + '\n' + title + filesName[2] + '\n')
 f.write(extension + ex + '\n')
 f.write(lineSum + str(line_count) + '\n')
 f.write(wordSum + str(words_count) + '\n')
 with open('Путь лидера.txt', 'r', encoding='utf-8') as file:
     f.write('\n' + file.read() + "\n")
-
-
-
-
-
-
-
-
-
